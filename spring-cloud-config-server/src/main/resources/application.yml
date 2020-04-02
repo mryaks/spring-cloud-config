@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: consent-direct-integration-service
+  profiles:
+    active: development,mysql
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/config-repo

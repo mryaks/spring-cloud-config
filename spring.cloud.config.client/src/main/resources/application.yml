@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: consent-direct-integration-service
+  profiles:
+    active: development
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888/
+      fail-fast: true
+      label: develop
+server:
+  port: 9999
